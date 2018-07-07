@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<title>Michael Grimes - Bassist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+<!-- Favicons --> 
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!-- STYLE  -->
+<style>
+html {
+	background-color: #aaaaaa;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	margin: 0 30px;
+	max-width: 1100px;
+    margin: auto;
+	background-color: #ffffff;
+}
+
+.mySlides {
+
+	
+}
+.hero {
+<!-- 	opacity: 0;
+		filter:grayscale(20%);
+	-webkit-filter:grayscale(20%); -->
+}
+
+.hero1,
+.portrait1 {
+	filter:grayscale(01%);
+	-webkit-filter:grayscale(01%);
+	transition: filter .3s;
+	transition: -webkit-filter .3s;
+
+}
+
+.hero1:hover,
+.portrait1:hover {
+	filter:grayscale(1%);
+	-webkit-filter:grayscale(1%);
+}
+
+.portrait:hover {
+	filter:grayscale(1%);
+	-webkit-filter:grayscale(1%);
+}
+
+#googleMap {
+	height:400px;
+	filter:grayscale(99%);
+	-webkit-filter:grayscale(99%);
+	transition: filter 1s;
+	transition: -webkit-filter 1s;
+}
+
+#googleMap:hover {
+	height:400px;
+	filter:grayscale(10%);
+	-webkit-filter:grayscale(10%);
+}
+
+.m-logo-placement1 {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.m-contact-placement1OLD {
+    position: absolute;
+	position: relative;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.gig-tile {
+width:100%; margin: 30px 0 0 0 ";
+}
+
+body .w3-navbar li a{
+	color: #aaa;
+	font-size: 20px;
+	margin-top: -5px;
+	letter-spacing: -1px;	
+}
+
+.w3-navbar li a:hover {
+    color: #aaa;
+    background-color: #535353;
+}
+
+#myTopNav {
+	max-width: 1100px;
+    margin: auto;
+}
+.contactForm {
+    width: 75%;
+    font-size: 16px;
+    resize: none;
+}
+textarea{
+	height: 125px;
+}
+.formWarning {
+	border: 2px solid red;
+	background-color: #f6d7d4;
+}
+
+.formVerified {
+	border: 2px solid green;
+	background-color: #c5ffbc;
+}
+</style>
+
+
+<body id="tippety-top">
+	<!-- Navbar -->
+	<div class="w3-top" id="myTopNav" >
+	<ul class="w3-navbar w3-black w3-card-2 w3-left-align">
+	  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+		<a class="w3-padding-medium" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+	  </li>
+<!-- 	  <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large w3-hover-orange" style="color:#ff8f00">MICHAEL GRIMES</a></li> -->
+	  <li><a href="#myTopNav"><img src="./assets/MichaelGrimesHeaderLogo.png" style="margin-top: 5px" id="topLink"></img></a></li>
+	  <li class="w3-hide-small"><a href="#about" class="w3-padding-large " id="aboutLink">ABOUT</a></li>
+	  <li class="w3-hide-small"><a href="#tour" class="w3-padding-large" id="datesLink">DATES</a></li>
+	  <li class="w3-hide-small"><a href="#discog" class="w3-padding-large" id="musicLink">MUSIC</a></li>
+	  <li class="w3-hide-small"><a href="#contact" class=" w3-padding-large" id="contactLink">CONTACT</a></li>
+	</ul>
+	</div>
+
+	<!-- Navbar on small screens -->
+	<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+	  <ul class="w3-navbar w3-left-align w3-black">
+		<li><a class="w3-padding-large" href="#about">ABOUT</a></li>
+		<li><a class="w3-padding-large" href="#tour">DATES</a></li>
+		<li><a class="w3-padding-large" href="#discog">MUSIC</a></li>
+		<li><a class="w3-padding-large" href="#contact">CONTACT</a></li>
+	  </ul>
+	</div>
+
+	<!-- Page content -->
+	<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+
+	  <div class="mySlides w3-display-container w3-center">
+		<img src="./assets/DoubleBass2Med.png" style="width:100%" class="hero">
+		<div class="m-logo-placement w3-container w3-text-white w3-padding-32 w3-hide-small">
+		  <img src="./assets/MichaelGrimesClearWhite.png" >
+		</div>
+	  </div>
+	  <div class="mySlides w3-display-container w3-center">
+		<img src="./assets/FenderBass2Med.png" style="width:100%"class="hero">
+		<div class="m-logo-placement w3-container w3-text-white w3-padding-32 w3-hide-small">
+		  <img src="./assets/MichaelGrimesClearWhite.png" >
+		</div>
+	  </div>
+
+
+	  <!-- The About Section -->
+	  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+		<h2 class="w3-wide">MICHAEL GRIMES</h2>
+		<p class="w3-opacity"><i>Bassist</i></p>
+		<p class="w3-justify">Michael Grimes is a bassist living in Seattle, Washington.  Michael grew up in Baltimore, Maryland and attended Baltimore School for the Arts for classical guitar and jazz bass.  He has toured extensively in both the United States and Europe and has had the opportunity to play with many great musicians along the way. <b></b><br><br>Highlights include playing with Grammy winning jazz trumpeter Bobby Shew, flautist Ali Ryerson,  Karl Denson and his Tiny Universe, members of Calexico, Giant Sand, and drummers Bryan Lewis and Pete Amaral.<b></b>
+	<br><br>As a session player, Michael has appeared on many albums and film soundtracks.  He has recorded on projects with artists such as M. Ward, Boris McCutcheon, P.J.Harvey, Neko Case, and Howe Gelb. 
+	<br><br>Michael performs regularly around the Seattle area with his trio, the <a href="http://triangularjazztet.com/" target="_blank">Triangular Jazztet</a>.
+	</p>
+		<div class="w3-half">
+			<p></p>
+			<img src="./assets/Michael4.JPG" class="w3-round w3-margin-bottom portrait" alt="Michael Grimes" style="width:90%">
+		</div>
+		<div class="w3-half">
+			<p></p>
+			<img src="./assets/Michael2.JPG" class="w3-round w3-margin-bottom portrait" alt="Michael Grimes" style="width:90%">
+		</div>
+	  </div>
+	  
+
+	  <!-- The Dates Section -->
+	  <div class="w3-black" id="tour">
+		<div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+		  <h2 class="w3-wide w3-center">DATES</h2>
+
+		  <div class="w3-row-padding w3-padding-32" style="margin:0 -16px" id='AirTableGigs'>
+<!-- 			<div class="w3-third w3-margin-bottom">
+			  <img src="./assets/MolluskSquare.png" alt="Mollusk" style="width:100%; margin: 30px 0 0 0 " class="w3-hover-opacity">
+			  <div class="w3-container w3-white" style="margin-top:-5px;>
+				<p><b>Seattle</b></p>
+				<p class="w3-opacity">Fri 27 Nov 2016</p>
+				<p>Mollusk<br>803 Dexter Ave N<br>Seattle, WA 98109</p>
+				<a href="https://goo.gl/maps/unamWr2dDVo" target="_blank"><button class="w3-btn w3-margin-bottom">Map</button></a>
+			  </div>
+			</div>
+			<div class="w3-third w3-margin-bottom">
+			  <img src="./assets/WhiskeyWestSquare.png" alt="Whiskey West" style="width:100%; margin: 30px 0 0 0 " class="w3-hover-opacity">
+			  <div class="w3-container w3-white" style="margin-top:-5px;>
+				<p><b>Seattle</b></p>
+				<p class="w3-opacity">Fri 27 Nov 2016</p>
+				<p>Mollusk<br>803 Dexter Ave N<br>Seattle, WA 98109</p>
+				<a href="https://goo.gl/maps/unamWr2dDVo" target="_blank"><button class="w3-btn w3-margin-bottom">Map</button></a>
+			  </div>
+			</div>
+			<div class="w3-third w3-margin-bottom">
+			  <img src="./assets/QueenAneBeerHallSquare.png" alt="Queen Anne Beerhall" style="width:100%; margin: 30px 0 0 0 " class="w3-hover-opacity">
+			  <div class="w3-container w3-white" style="margin-top:-5px;>
+				<p><b>Seattle</b></p>
+				<p class="w3-opacity">Fri 27 Nov 2016</p>
+				<p>Mollusk<br>803 Dexter Ave N<br>Seattle, WA 98109</p>
+				<a href="https://goo.gl/maps/unamWr2dDVo" target="_blank"><button class="w3-btn w3-margin-bottom">Map</button></a>
+			  </div>
+			</div> -->
+		  </div>
+		</div>
+	  </div>
+	  
+		<!-- The Discography Section -->
+		<div class="w3-grey" id="discog">
+			<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" >
+				<h2 class="w3-wide">DISCOGRAPHY</h2>
+				<p class="w3-opacity" style="height:50px"><i></i></p>
+
+				<!-- CARNIVALEE -->
+				<h3 class="w3-wide">Carnivalee - 2010</h3>
+				<div style="margin: auto; height:470px;">
+					<a href="https://michaelgrimes.bandcamp.com/album/carnivalee" target="_blank"><img src="https://f4.bcbits.com/img/a0228141810_16.jpg" class="w3-half"></img></a>
+					<iframe class="w3-half" style="border: 0; height: 383px; overflow: scroll;" src="https://bandcamp.com/EmbeddedPlayer/album=1335210575/size=large/bgcol=9e9e9e/linkcol=0687f5/artwork=none/tracklist=true/transparent=true/" seamless><a href="http://michaelgrimes.bandcamp.com/album/carnivalee">carnivalee by Michael Grimes</a></iframe>						
+				</div>
+							
+				<!-- JAZZ NOISE -->
+				<h3 class="w3-wide">Jazz Noise - 2010</h3>
+				<div style="margin: auto; height:470px;">
+					<iframe class="w3-half" style="border: 0; height: 383px; overflow: scroll;" src="https://bandcamp.com/EmbeddedPlayer/album=4026169040/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/tracklist=true/transparent=true/" seamless><a href="http://michaelgrimes.bandcamp.com/album/michael-makes-a-jazz-noise">Michael makes a jazz noise by Michael Grimes</a></iframe>
+					<a href="https://michaelgrimes.bandcamp.com/album/michael-makes-a-jazz-noise" target="_blank"><img src="https://f4.bcbits.com/img/a3685061704_16.jpg" class="w3-half"></img></a>
+				</div>
+				
+				<!-- GOODWILL -->
+				<h3 class="w3-wide">Behind the Goodwill - 2005</h3>
+				<div style="margin: auto; height:470px;">
+					<a href="https://michaelgrimes.bandcamp.com/album/behind-the-goodwill" target="_blank"><img src="https://f4.bcbits.com/img/a0702720971_16.jpg" class="w3-half"></img></a>			
+					<iframe class="w3-half" style="border: 0; height: 383px; overflow: scroll;"src="https://bandcamp.com/EmbeddedPlayer/album=228454290/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/tracklist=true/transparent=true/" seamless><a href="http://michaelgrimes.bandcamp.com/album/behind-the-goodwill">Behind The Goodwill by Michael Grimes</a></iframe>
+				</div>
+				
+			</div>
+		</div>
+	  
+	  
+
+	  <!-- Ticket Modal -->
+	  <div id="ticketModal" class="w3-modal">
+		<div class="w3-modal-content w3-animate-top w3-card-8">
+		  <header class="w3-container w3-teal w3-center w3-padding-32">
+			<span onclick="document.getElementById('ticketModal').style.display='none'"
+		   class="w3-closebtn w3-padding-xlarge w3-xxlarge w3-display-topright">×</span>
+			<h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+		  </header>
+		  <div class="w3-container">
+			<p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+			<input class="w3-input w3-border" type="text" placeholder="How many?">
+			<p><label><i class="fa fa-user"></i> Send To</label></p>
+			<input class="w3-input w3-border" type="text" placeholder="Enter email">
+			<button class="w3-btn-block w3-teal w3-padding-12 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+			<button class="w3-btn w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+			<p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- The Contact Section -->
+	  <div class="w3-container w3-content w3-padding-64" style="max-width:100%" id="contact">
+		<h2 class="w3-wide w3-center">CONTACT</h2>
+		<p class="w3-opacity w3-center">Reach out and touch someone</p>
+		<div class="w3-row w3-padding-32 m-contact-placement1" style="background-image:URL('./assets/map.jpg');">
+		  <div class="w3-col m6 w3-large w3-margin-bottom">
+			<!-- <a href="#googleMap" style="padding:0 0 0 25%;" ><i class="fa fa-map-marker" style="width:30px;"></i> Seattle, US<br></a> -->
+		  </div>
+
+		  
+			  
+			  
+<!-- 			<div class="w3-col m6"> -->
+			<div class="w3-half">
+				<form name="contactform" method="post" action="send_form_email.php" onsubmit="return validateForm();">
+					<table width="100%">
+						<tr>
+							<td valign="top" style="text-align:right">
+								<label for="first_name" >Name *</label>
+							</td>
+							<td valign="top">
+								<input  type="text" name="first_name" maxlength="50" size="25" class="contactForm" placeholder="Joe Smith" id="nameArea">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" style="text-align:right">
+								<label for="email">Email *</label>
+							</td>
+							<td valign="top">
+								<input  type="text" name="email" maxlength="80" size="25" class="contactForm" id="emailArea" placeholder="you@whatever.com">
+							</td>
+						</tr>
+						 <tr>
+							<td valign="top" style="text-align:right">
+								<label for="comments">Comments *</label>
+							</td>
+							<td valign="top">
+								<textarea  name="comments" maxlength="2000" class="contactForm" id="commentsArea"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								<input type="submit" value="Submit" id="submitButton" disabled="disabled">   <!-- <a href="http://www.freecontactform.com/email_form.php">Email Form</a> -->
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div> 		  
+		  
+		  
+		  
+		  
+		</div>
+	  </div>
+	  
+	  
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  
+		<script>
+		$(document).ready(function(){
+			console.log("loaded email listener script and page is ready");
+			
+			// ensure that all fields are filled out before enabling the submit button
+			$('form input').keyup(function() {
+				console.log("form> input fired");
+				validateSubmitButton();
+			});
+			
+			$("#commentsArea").keyup(function() {
+				validateSubmitButton();
+			});
+			
+			function validateSubmitButton() {
+				console.log("checking for new content");
+				var validName = validateNameField();
+				var validEmail = validateEmailField();
+				var validContent = validateCommentsField();
+				
+
+				if (validName && validEmail && validContent) {
+					$('#submitButton').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+				} else {
+					$('#submitButton').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
+				}
+			}
+		
+			// initially set field verified to false on focus
+			$( "#emailArea" ).focus(function() {
+			console.log("email form has focus");
+				var hasValue = document.forms["contactform"]["email"].value;
+				if (hasValue){
+					validateEmailField()
+				}
+				else{
+					$("#emailArea").addClass( "formWarning" );
+				}
+			});
+
+			
+			function validateNameField() {
+				if ($("#nameArea").val() == '') {
+					$("#nameArea").addClass( "formWarning" );
+					$("#nameArea").removeClass( "formVerified" );
+					return false;
+				}
+				else {
+					$("#nameArea").removeClass( "formWarning" );
+					$("#nameArea").addClass( "formVerified" );
+					return true;
+				}
+			}
+			
+			function validateEmailField() {
+				// validate email field
+				var x = document.forms["contactform"]["email"].value;
+				console.log("validating Email field" + x);
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+					$("#emailArea").addClass( "formWarning" );
+					$("#emailArea").removeClass( "formVerified" );
+					console.log("email has errors");
+					return false;
+				}
+				else{
+					$("#emailArea").removeClass( "formWarning" );
+					$("#emailArea").addClass( "formVerified" );
+					console.log("email is legit");
+					return true;
+				}
+			}
+			
+			function validateCommentsField() {
+				if ($("#commentsArea").val() == '') {
+					$("#commentsArea").addClass( "formWarning" );
+					$("#commentsArea").removeClass( "formVerified" );
+					return false;
+				}
+				else {
+					$("#commentsArea").removeClass( "formWarning" );
+					$("#commentsArea").addClass( "formVerified" );
+					return true;
+				}
+			}
+			
+			
+
+			
+
+			function validateForm() {
+			
+				//validate email field
+				if (!validateEmailField()){
+					$("#emailArea").addClass( "formWarning" );
+					alert ("the email address you entered does not appear to be valid");
+					return false;
+				}
+				
+				// validate content field
+				var contentFieldValue = document.forms["contactform"]["comments"].value;
+				if (!contentFieldValue) {
+					$("#commentsArea").addClass( "formWarning" );
+					alert ("Did you mean to send this with no content?");
+					return false;
+				}
+			}
+			
+
+			
+			//$( '.hero' ).load(function() {
+				//console.log("hero image has loaded");
+				// $('.hero').fadeIn("slow");
+				//$( '.hero' ).fadeTo( 5000 , .99, function() {
+					// Animation complete.
+				  //});
+			//});
+		});
+		</script>
+	  
+	<!-- End Page Content -->
+	</div>
+	
+	
+	
+<!-- my scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.11.0/axios.min.js"></script>
+<script src="/Dates.js"></script>
+<script src="/Scroll_animation.js"></script>
+
+<!-- Add Google Maps -->
+<!-- <div id="googleMap"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYobnw7lF-Cf6uwNsWBQ0v14ihPSJRRrg"></script>
+<script>
+var myCenter = new google.maps.LatLng(47.608013, -122.335167);
+    
+function initialize() {
+    var mapProp = {
+    center: myCenter,
+    zoom: 12,
+    scrollwheel: false,
+    draggable: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+    
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+var marker = new google.maps.Marker({
+    position: myCenter,
+});
+    
+marker.setMap(map);
+}
+    
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+ -->
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<!--   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a> -->
+</footer>
+
+<!-- Google analytics --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21885530-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<script>
+
+function fadeOutHero (thisHeroImage) {
+	$( thisHeroImage ).fadeTo( 3000 , .01, function() {
+		thisHeroImage.style.visibility = "hidden";
+	});
+} 
+
+function fadeInHero (thisHeroImage) {
+	thisHeroImage.style.visibility = "initial";
+	$( thisHeroImage ).fadeTo( 3000 , .99, function() {
+	});
+} 
+			
+			
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none"; 
+	// fadeOutHero(x[i]);
+	
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+	x[myIndex-1].style.display = "block";
+	//fadeInHero(x[myIndex-1]);
+    setTimeout(carousel, 8000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
