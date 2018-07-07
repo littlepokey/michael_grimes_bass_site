@@ -3,28 +3,44 @@ console.log("loaded GigDates.js");
 var CollectedMarkup = "";
   
 // sort with _createdTime ??
-var airtable_read_endpoint =  "https://api.airtable.com/v0/appZAJ6dHd1kPPBTv/GigList?maxRecords=100&view=GridView&api_key=keycXj4YSD4WZj9gy";
+var airtable_read_endpoint =  "https://api.airtable.com/v0/appZAJ6dHd1kPPBTv/GigList?maxRecords=4&view=GridView&api_key=keycXj4YSD4WZj9gy";
 var airtable_write_endpoint = "https://api.airtable.com/v0/appZAJ6dHd1kPPBTv/GigList?api_key=keycXj4YSD4WZj9gy";
 // var airtable_write_endpoint = "https://api.airtable.com/v0/appnPiAF5nEI3Lu1a/all_poll_data?api_key=keyU4jNgidjWREljE";
 
 
-var GigBuilder1 = '<div class="w3-third w3-margin-bottom"><img src="./';
-//image name goes here 
-var GigBuilder2 = '" alt="';
-// alt text goes here 
-var GigBuilder3 = '" class="w3-hover-opacity gig-tile"><div class="w3-container w3-white" style="margin-top:0px;><strong>';
-//venue goes here 
-var GigBuilder4 = '</strong><p class="w3-opacity">';
-// date goes here 
-var GigBuilder5 = '</p><p><strong>';
-// venue goes here
-var GigBuilder6 = '</strong><br>';
-// address goes here 
-var GigBuilder7 = '</p><a href="';
-// google maps link goes here 
-var GigBuilder8 = '" target="_blank"><button class="w3-btn w3-margin-bottom">Map</button></a></div></div>'
+
+/* var GigBuilder1 = '<div class="event row"><div class="col-md-12"><h3 class="eventDate" style="margin: 5px auto">';
+// DATE goes here
+var GigBuilder2 = '</h3><a href="';
+// VWEBSITE goes here
+var GigBuilder3 = '" target="_blank"> <h3 class="eventTitle" style="margin: 5px auto"> ';
+// VENUE goes here
+var GigBuilder4 = '</h3></a>';
+// MAP goes here
+var GigBuilder5 = '</div></div>';
+ */
+// testing Coomit from Command line
+// testing new branch 
+// here isa new edit to the file
+// here is another edit to this file from the master branch 
 
 
+var GigBuilder1 = '<div class="event row" style="text-align: center"><div class="col-md-12"><a href="';
+// VWEBSITE goes here
+var GigBuilder2 = '" target="_blank"> <img style="margin: 70px auto 10px auto; width: 250px;" src="';
+// LOGO goes here
+var GigBuilder3 = '"></a><h3 style="margin: -5px auto 0 auto">';
+// DATE goes Here
+// TIME goes here
+var GigBuilder4 = '</h5><a style="margin: 0 auto 50px auto" href="';
+// MAP goes here
+var GigBuilder5 = '" target="_blank">';
+// ADDRESS goes here
+var GigBuilder6 = '</a></div></div>'
+
+
+
+	
 	
 function getDataAndBuild() {
    
@@ -44,10 +60,15 @@ function getDataAndBuild() {
 			var SystemDate = result.data.records[i].fields.DateScheduled;
 			var MyDate = result.data.records[i].fields.GigDate;
 			var MyTime = result.data.records[i].fields.GigTime;
-			var MyLogo = result.data.records[i].fields.LogoURL;
-
-			var MyResult = GigBuilder1 + MyLogo + GigBuilder2 + MyVenueName + GigBuilder3 + MyVenueName + GigBuilder4 + MyDate + GigBuilder5 + MyVenueName + GigBuilder6 + VenueAddress + GigBuilder7 + MyMap + GigBuilder8;
-			console.log('loaded event ' +  i);
+			var Image = result.data.records[i].fields.ImgURL;
+				// format to get just the URL 
+				  Image = Image.split("(");
+				  Image = Image[1];
+				  Image = Image.split(")");
+				  Image = Image[0];
+	  
+			var MyResult = GigBuilder1 + MyVenueSite + GigBuilder2 + Image + GigBuilder3 +  MyVenueName + "<br><h4 style='margin: 0'>" + MyDate + "</h4>" + GigBuilder4 + MyMap + GigBuilder5 + VenueAddress + GigBuilder6;
+			console.log(MyResult);
 			if (result.data.records[i].fields.Confirmed){
 				CollectedMarkup += MyResult;
 			}
