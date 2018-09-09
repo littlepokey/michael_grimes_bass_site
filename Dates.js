@@ -36,14 +36,13 @@ var GigBuilder4 = '</h5><a style="margin: 0 auto 50px auto" href="';
 // MAP goes here
 var GigBuilder5 = '" target="_blank">';
 // ADDRESS goes here
-var GigBuilder6 = '</a></div></div>'
+var GigBuilder6 = '</a></div></div>';
 
 
 
 	
 	
-function getDataAndBuild() {
-   
+function getDataAndBuild() { 
   console.log("Getting data");
   axios
     .get(airtable_read_endpoint)
@@ -69,9 +68,9 @@ function getDataAndBuild() {
 	  
 			var MyResult = GigBuilder1 + MyVenueSite + GigBuilder2 + Image + GigBuilder3 +  MyVenueName + "<br><h4 style='margin: 0'>" + MyDate + "</h4>" + GigBuilder4 + MyMap + GigBuilder5 + VenueAddress + GigBuilder6;
 			console.log(MyResult);
-			if (result.data.records[i].fields.Confirmed){
+			//if (result.data.records[i].fields.Confirmed){   //removing this filter for Michael Grimes Bass Site 
 				CollectedMarkup += MyResult;
-			}
+			//}
 
 	  }
 	  // insert into DOM 
